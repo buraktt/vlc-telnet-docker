@@ -19,4 +19,4 @@ echo "defaults.ctl.card $SOUND_CARD_NUMBER" >> /etc/asound.conf
 amixer set "$VOLUME_CHANNEL" "$VOLUME_LEVEL_PERCENT"%
 
 # Run VLC with telnet interface as a non-root "vlcuser" user
-su -c "vlc -I telnet --no-dbus --aout=Alsa --telnet-password $TELNET_PASSWORD" vlcuser
+vlc -I telnet --no-dbus --aout=Alsa --telnet-password $TELNET_PASSWORD
