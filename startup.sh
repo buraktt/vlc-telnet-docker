@@ -2,7 +2,7 @@
 
 # Assert env variable
 if [ -z "$TELNET_PASSWORD" ]; then
-  echo "ERROR: 'TELNET_PASSWORD' env variable is not defined"
+  echo "ERROR: 'TELNET_PASSWORD' environment variable is not defined"
   exit 1
 fi
 
